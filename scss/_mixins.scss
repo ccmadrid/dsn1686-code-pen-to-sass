@@ -1,3 +1,3 @@
-@mixin box-shadow{
-
+@mixin trans($rotate, $translatex, $translatey){
+	transform: rotate($rotate) translate($translatex, $translatey);
 }
