@@ -1,14 +1,14 @@
 body{
   margin-top: 3em;
-  background: #eee;
-  color: #555;
+  background: $secondary;
+  color: $primary;
   font-family: "Open Sans", "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 p, p a{
   font-size: 12px;
   text-align: center;
-  color: #888;
+  color: $tertiary;
 }
 
 /* Important styles */
@@ -32,11 +32,11 @@ p, p a{
   }
   span, span:after, span:before{
     width: 100%;
-  height: 5px;
-  background-color: #888;
-  transition: all 0.3s;
-  backface-visibility: hidden;
-  border-radius: 2px;
+    height: 5px;
+    background-color: $tertiary;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+    border-radius: 2px;
   }
   &.on{
     span{
@@ -58,7 +58,7 @@ p, p a{
 /* menu appearance*/
 #menu {
   position: relative;
-  color: #999;
+  color: lighten($tertiary, 10%);
   width: 200px;
   padding: 10px;
   margin: auto;
@@ -67,19 +67,18 @@ p, p a{
   border-radius: 4px;
   background: white;
   box-shadow: 0 1px 8px rgba(0,0,0,0.05);
-  /* just for this demo */
   opacity: 0;
   visibility: hidden;
   transition: opacity .4s;
   &:after{
     position: absolute;
-  top: -15px;
-  left: 95px;
-  content: "";
-  display: block;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-bottom: 20px solid white;
+    top: -15px;
+    left: 95px;
+    content: "";
+    display: block;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid white;
   }
 }
 
@@ -92,12 +91,12 @@ ul, li, li a {
 
 li a {
   padding: 5px;
-  color: #888;
+  color: $tertiary;
   text-decoration: none;
   transition: all .2s;
   &:hover, &:focus{
-  background: #1ABC9C;
-  color: #fff;
+    background: $secondary;
+    color: $primary;
   }
 }
 
