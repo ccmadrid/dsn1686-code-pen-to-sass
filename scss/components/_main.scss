@@ -34,7 +34,7 @@ p, p a{
     width: 100%;
     height: 5px;
     background-color: $primary;
-    transition: all 0.3s;
+    transition: all $duration;
     backface-visibility: hidden;
     border-radius: 2px;
   }
@@ -42,10 +42,10 @@ p, p a{
     span{
       background-color: transparent;
       &:before{
-        @include trans(45deg,5px,5px);
+        @include trans(405deg,5px,5px);
       }
       &:after{
-        @include trans(-45deg,7px,-8px);
+        @include trans(-405deg,7px,-8px);
       }
     }
     & + #menu{
@@ -69,7 +69,7 @@ p, p a{
   box-shadow: 0 1px 8px rgba(0,0,0,0.05);
   opacity: 0;
   visibility: hidden;
-  transition: opacity .4s;
+  transition: opacity $duration;
   &:after{
     position: absolute;
     top: -15px;
@@ -94,7 +94,7 @@ li a {
   border-radius: 3em;
   color: $tertiary;
   text-decoration: none;
-  transition: all .2s;
+  transition: all $duration-2;
   &:hover, &:focus{
     background: $secondary;
     color: $primary;
