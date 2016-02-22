@@ -2,7 +2,7 @@ body {
   margin-top: 3em;
   background: #F4855A;
   color: #0C0C0C;
-  font-family: "Open Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: "Effra", Helvetica, Arial, sans-serif;
 }
 
 p, p a {
@@ -73,7 +73,7 @@ p, p a {
   width: 200px;
   padding: 10px;
   margin: auto;
-  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  font-family: "Effra", Helvetica, Arial, sans-serif;
   text-align: center;
   border-radius: 4px;
   background: white;
